@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "access_requests",
+  "info": {
+    "singularName": "access-request",
+    "pluralName": "access-requests",
+    "displayName": "AccessRequest"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "uuid": {
+      "type": "uid",
+      "required": true
+    },
+    "mac": {
+      "type": "string",
+      "required": true,
+      "private": true
+    },
+    "unifi_id": {
+      "type": "string",
+      "required": true,
+      "private": true
+    },
+    "ap": {
+      "type": "string",
+      "required": true,
+      "private": true
+    },
+    "status": {
+      "type": "string",
+      "default": "new"
+    },
+    "message": {
+      "type": "string"
+    }
+  }
+}

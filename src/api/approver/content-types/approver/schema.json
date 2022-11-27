@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "approvers",
+  "info": {
+    "singularName": "approver",
+    "pluralName": "approvers",
+    "displayName": "Approver"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "chat_id": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "unifi_site": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::unifi-site.unifi-site",
+      "inversedBy": "approvers"
+    }
+  }
+}

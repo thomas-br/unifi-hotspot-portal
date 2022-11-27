@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "unifi_sites",
+  "info": {
+    "singularName": "unifi-site",
+    "pluralName": "unifi-sites",
+    "displayName": "UnifiSite"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "unifi_id": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "registration_password": {
+      "type": "password",
+      "required": true,
+      "private": true
+    },
+    "decline_message": {
+      "type": "text",
+      "default": "Ich glaube du hast in diesem Netzwerk nichts verloren."
+    },
+    "approvers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::approver.approver",
+      "mappedBy": "unifi_site"
+    }
+  }
+}
