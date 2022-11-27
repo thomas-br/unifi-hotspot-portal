@@ -12,3 +12,7 @@ The idea was to start this repository which might evolve in an actual open sourc
 For the beginning I am starting an initial [Issue](https://github.com/thomas-br/unifi-hotspot-portal/issues/1) for discussion where I will also provide some basic information about the current solution.
 From time to time I hope to find time to turn it into an open-source solution with the limiting factor of time and lots of other stuff on my list.
 At the same time I hope to find also contributors helping with the project.
+
+## Contibuting
+
+Please have a look at the issue #2 for discussions around the current state for the initial release scope & alignments related to contribution of open points.
